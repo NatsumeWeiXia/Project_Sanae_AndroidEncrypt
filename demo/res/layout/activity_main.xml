@@ -1,0 +1,211 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical" >
+	<ScrollView
+		android:layout_width="match_parent"
+		android:layout_height="match_parent" >
+
+		<LinearLayout
+			android:layout_width="match_parent"
+			android:layout_height="match_parent"
+			android:orientation="vertical" >
+
+			<TextView
+				android:layout_width="wrap_content"
+				android:layout_height="wrap_content"
+				android:text="  URL:"/>
+
+			<EditText
+				android:id="@+id/et_address"
+				android:layout_width="match_parent"
+				android:layout_height="wrap_content" />
+
+			<TextView
+				android:layout_width="wrap_content"
+				android:layout_height="wrap_content"
+				android:text="  APPKEY:"/>
+
+			<EditText
+				android:id="@+id/et_appkey"
+				android:layout_width="match_parent"
+				android:layout_height="wrap_content" />
+
+			<TextView
+				android:layout_width="wrap_content"
+				android:layout_height="wrap_content"
+				android:text="  TOKEN:"/>
+
+			<EditText
+				android:id="@+id/et_token"
+				android:layout_width="match_parent"
+				android:layout_height="wrap_content" />
+
+			<TextView
+				android:layout_width="wrap_content"
+				android:layout_height="wrap_content"
+				android:text="  SEC:"/>
+
+			<EditText
+				android:id="@+id/et_sec"
+				android:layout_width="match_parent"
+				android:layout_height="wrap_content" />
+
+			<Button
+				android:id="@+id/btn_init"
+				android:layout_width="match_parent"
+				android:layout_height="wrap_content"
+				android:text="初始化"/>
+
+			<View
+				android:layout_width="match_parent"
+				android:layout_height="1dp"
+				android:layout_marginTop="5dp"
+				android:layout_marginBottom="5dp"
+				android:background="#000000"/>
+
+			<TextView
+				android:layout_width="wrap_content"
+				android:layout_height="wrap_content"
+				android:text="  对方IM账号或群组ID:"/>
+
+			<EditText
+				android:id="@+id/et_id"
+				android:layout_width="match_parent"
+				android:layout_height="wrap_content" />
+
+			<RadioButton
+				android:id="@+id/rb_isgroup"
+				android:layout_width="wrap_content"
+				android:layout_height="wrap_content"
+				android:text="是否群组"
+				android:checked="false"
+				android:textSize="14dp"/>
+
+			<View
+				android:layout_width="match_parent"
+				android:layout_height="1dp"
+				android:layout_marginTop="5dp"
+				android:layout_marginBottom="5dp"
+				android:background="#777777"/>
+
+			<TextView
+				android:layout_width="wrap_content"
+				android:layout_height="wrap_content"
+				android:text="  待加密文字:"/>
+
+			<EditText
+				android:id="@+id/et_msg"
+				android:layout_width="match_parent"
+				android:layout_height="wrap_content" />
+
+			<Button
+				android:id="@+id/btn_e_t"
+				android:layout_width="match_parent"
+				android:layout_height="wrap_content"
+				android:text="加密文字"/>
+
+			<Button
+				android:id="@+id/btn_d_t"
+				android:layout_width="match_parent"
+				android:layout_height="wrap_content"
+				android:text="解密之前加密的文字"/>
+
+			<TextView
+				android:layout_width="wrap_content"
+				android:layout_height="wrap_content"
+				android:text="  源文件路径:"/>
+
+			<EditText
+				android:id="@+id/et_file"
+				android:layout_width="match_parent"
+				android:layout_height="wrap_content" />
+
+			<TextView
+				android:layout_width="wrap_content"
+				android:layout_height="wrap_content"
+				android:text="  加密文件存储路径:"/>
+
+			<EditText
+				android:id="@+id/et_file_e"
+				android:layout_width="match_parent"
+				android:layout_height="wrap_content" />
+
+			<Button
+				android:id="@+id/btn_e_f"
+				android:layout_width="match_parent"
+				android:layout_height="wrap_content"
+				android:text="加密文件"/>
+
+			<TextView
+				android:layout_width="wrap_content"
+				android:layout_height="wrap_content"
+				android:text="  解密源文件路径:"/>
+
+			<EditText
+				android:id="@+id/et_e_file"
+				android:layout_width="match_parent"
+				android:layout_height="wrap_content" />
+
+			<TextView
+				android:layout_width="wrap_content"
+				android:layout_height="wrap_content"
+				android:text="  解密文件存储路径:"/>
+
+			<EditText
+				android:id="@+id/et_file_d"
+				android:layout_width="match_parent"
+				android:layout_height="wrap_content" />
+
+			<Button
+				android:id="@+id/btn_d_f"
+				android:layout_width="match_parent"
+				android:layout_height="wrap_content"
+				android:text="解密文件"/>
+
+			<View
+				android:layout_width="match_parent"
+				android:layout_height="1dp"
+				android:layout_marginTop="5dp"
+				android:layout_marginBottom="5dp"
+				android:background="#000000"/>
+
+			<TextView
+				android:layout_width="wrap_content"
+				android:layout_height="wrap_content"
+				android:text="  群组ID:"/>
+
+			<EditText
+				android:id="@+id/et_groupid"
+				android:layout_width="match_parent"
+				android:layout_height="wrap_content" />
+
+			<TextView
+				android:layout_width="wrap_content"
+				android:layout_height="wrap_content"
+				android:text="  群组添加人员（,隔开）:"/>
+
+			<EditText
+				android:id="@+id/et_group_a"
+				android:layout_width="match_parent"
+				android:layout_height="wrap_content" />
+
+			<TextView
+				android:layout_width="wrap_content"
+				android:layout_height="wrap_content"
+				android:text="  群组删除人员（,隔开）:"/>
+
+			<EditText
+				android:id="@+id/et_group_d"
+				android:layout_width="match_parent"
+				android:layout_height="wrap_content" />
+
+			<Button
+				android:id="@+id/btn_mg"
+				android:layout_width="match_parent"
+				android:layout_height="wrap_content"
+				android:text="维护群组"/>
+		</LinearLayout>
+	</ScrollView>
+</LinearLayout>
